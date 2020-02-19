@@ -1,0 +1,31 @@
+
+Selected circuits
+===================
+ - **Circuit**: 12-bit unsigned multipliers
+ - **Selection criteria**: pareto optimal sub-set wrt. WCED [%] and Power parameters
+
+Parameters of selected circuits
+----------------------------
+
+| Circuit name | MAE<sub>%</sub> | WCE<sub>%</sub> | EP<sub>%</sub> | MRE<sub>%</sub> | MSE | Power<sub>W</sub> | Delay<sub>ns</sub> | LUTs | Download |
+| --- |  --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| mul12u_2U9 | 0.029 | 0.12 | 99.49 | 0.68 | 34858.382e3 | 1.8 | 13 | 110 |  [[Verilog](mul12u_2U9.v)] [[Verilog<sub>PDK45</sub>](mul12u_2U9_pdk45.v)] [[C](mul12u_2U9.c)] |
+| mul12u_338 | 0.037 | 0.15 | 93.71 | 0.65 | 57970.012e3 | 1.4 | 11 | 121 |  [[Verilog](mul12u_338.v)] [[Verilog<sub>PDK45</sub>](mul12u_338_pdk45.v)] [[C](mul12u_338.c)] |
+| mul12u_343 | 0.085 | 0.34 | 98.39 | 1.38 | 29802.164e4 | 1.0 | 10 | 80 |  [[Verilog](mul12u_343.v)] [[Verilog<sub>PDK45</sub>](mul12u_343_pdk45.v)] [[C](mul12u_343.c)] |
+| mul12u_34Y | 0.18 | 0.73 | 99.56 | 2.69 | 13346.794e5 | 0.93 | 11 | 71 |  [[Verilog](mul12u_34Y.v)] [[Verilog<sub>PDK45</sub>](mul12u_34Y_pdk45.v)] [[C](mul12u_34Y.c)] |
+| mul12u_368 | 0.38 | 1.51 | 99.86 | 5.01 | 56232.128e5 | 0.71 | 9.5 | 48 |  [[Verilog](mul12u_368.v)] [[Verilog<sub>PDK45</sub>](mul12u_368_pdk45.v)] [[C](mul12u_368.c)] |
+| mul12u_2V4 | 0.96 | 3.86 | 99.95 | 12.42 | 33191.153e6 | 0.52 | 10 | 27 |  [[Verilog](mul12u_2V4.v)] [[Verilog<sub>PDK45</sub>](mul12u_2V4_pdk45.v)] [[C](mul12u_2V4.c)] |
+| mul12u_34Q | 1.53 | 6.10 | 99.95 | 15.79 | 92062.713e6 | 0.43 | 8.7 | 22 |  [[Verilog](mul12u_34Q.v)] [[Verilog<sub>PDK45</sub>](mul12u_34Q_pdk45.v)] [[C](mul12u_34Q.c)] |
+| mul12u_2PD | 4.28 | 17.14 | 99.95 | 34.95 | 76007.139e7 | 0.34 | 7.3 | 17 |  [[Verilog](mul12u_2PD.v)] [[Verilog<sub>PDK45</sub>](mul12u_2PD_pdk45.v)] [[C](mul12u_2PD.c)] |
+| mul12u_2E5 | 7.80 | 31.20 | 99.95 | 53.70 | 24064.241e8 | 0.27 | 6.4 | 4.0 |  [[Verilog](mul12u_2E5.v)] [[Verilog<sub>PDK45</sub>](mul12u_2E5_pdk45.v)] [[C](mul12u_2E5.c)] |
+| mul12u_35V | 18.74 | 74.95 | 99.95 | 87.98 | 15865.376e9 | 0.25 | 6.0 | 1.0 |  [[Verilog](mul12u_35V.v)] [[Verilog<sub>PDK45</sub>](mul12u_35V_pdk45.v)] [[C](mul12u_35V.c)] |
+    
+Parameters
+--------------
+![Parameters figure](fig.png)
+
+References
+--------------
+PRABAKARAN B. S., MRAZEK V., VASICEK Z., SEKANINA L., SHAFIQUE M. ApproxFPGAs: Embracing ASIC-based Approximate Arithmetic Components for FPGA-Based Systems. DAC 2020.
+
+             
