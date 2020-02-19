@@ -20,10 +20,10 @@ The basic library of approximate circuits
 CITATION = \'\'\'
 @INPROCEEDINGS{approxfpgas,
     author = "S. Bharath Prabakaran and Vojtech Mrazek and Zdenek Vasicek and Lukas Sekanina and Muhammad Shafique",
-   title = "ApproxFPGAs: Embracing ASIC-based Approximate Arithmetic Components for FPGA-Based Systems",
-   year = 2020,
-    volume={},
-    number={},
+    title = "ApproxFPGAs: Embracing ASIC-based Approximate Arithmetic Components for FPGA-Based Systems",
+    year = 2020,
+    booktitle = "The 57th Annual Design Automation Conference 2020 (DAC '20)",
+    publisher = "Association for Computing Machinery",
     pages={6},
     }
 \'\'\'

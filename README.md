@@ -7,13 +7,14 @@ This is a GitHub repository of subset of EvoApproxLib optimized for FPGAs . The 
 ## Reference
 This library is licenced under [MIT licence](LICENSE.md). If you use the library in your research, please refer the following paper:
 
-PRABAKARAN B. S., MRAZEK V., VASICEK Z., SEKANINA L., SHAFIQUE M. ApproxFPGAs: Embracing ASIC-based Approximate Arithmetic Components for FPGA-Based Systems. DAC 2020.
+PRABAKARAN B. S., MRAZEK V., VASICEK Z., SEKANINA L., SHAFIQUE M. ApproxFPGAs: Embracing ASIC-based Approximate Arithmetic Components for FPGA-Based Systems. The 57th Annual Design Automation Conference 2020 (DAC '20), 2020.
 
 ```bibtex
 @INPROCEEDINGS{approxfpgas,
-    author = "S. Bharath Prabakaran and Vojtech Mrazek and Zdenek Vasicek and Lukas Sekanina and Muhammad Shafique",
-   title = "ApproxFPGAs: Embracing ASIC-based Approximate Arithmetic Components for FPGA-Based Systems",
-   year = 2020,
+    author = "Bharath S. Prabakaran and Vojtech Mrazek and Zdenek Vasicek and Lukas Sekanina and Muhammad Shafique",
+    title = "ApproxFPGAs: Embracing ASIC-based Approximate Arithmetic Components for FPGA-Based Systems",
+    booktitle = "The 57th Annual Design Automation Conference 2020 (DAC '20)",
+    publisher = "Association for Computing Machinery",
     volume={},
     number={},
     pages={6},
@@ -44,7 +45,7 @@ python3 setup.py install --user
 
 4. Finally, the extension can be used in a Python script as follows:
 ```python
-import approxlib as eal
+import approxfpga as eal
 
 e = 0
 for i in range(0, 2**8):
@@ -53,18 +54,6 @@ for i in range(0, 2**8):
 
 print('MAE calculated', e / (2**(2*8)))
 print('MAE from lib', eal.add8u_04A.MAE)
-```
-
-Each circuit is implemented as single binary module, providing the `calc(a, b)` function and various paremeters. The `evoapproxlib` module also contains dictionaries `eal.adders` and `eal.multipliers` with references to all circuits, grouped by their data type, for easier iteration:
-
-```python
-import evoapproxlib as eal
-
-for name, module in eal.adders['8_unsigned'].items():
-    print(name, module.MAE, module.WCE)
-
-for name, module in eal.multiplers['16x16_signed'].items():
-    print(name, module.MAE, module.WCE)
 ```
 
 ## Circuits
